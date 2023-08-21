@@ -1,0 +1,12 @@
+routers:
+1- home: /
+
+Outh:
+2- signup: /singup
+3- signin: /signin
+4- forgetpassword: /forgetpassword
+
+
+
+firebase account:
+masa2fa@gmail.com
