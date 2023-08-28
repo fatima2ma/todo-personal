@@ -38,19 +38,21 @@ function Home(){
     //     toast.success('list added successfully');
     // }
     return(
-        <div className="w-full flex h-screen relative">
-            <div className="min-w-4/5 h-screen flex gap-2">
-                <Lists/>
-                {/* <div className="addListForm h-max bg-gray-800 w-2/6 rounded-md text-white px-2 py-2">
-                    <form onSubmit={onSubmit} className='addList flex items-center gap-2 my-4'> 
-                        <input onChange={onChange} type='text' className='grow rounded-md px-2 py-2 bg-gray-700' placeholder='add new list' id='title' name='title'/>
-                        <button type='submit' className='ring-1 ring-white py-1 rounded-md px-2 hover:bg-gray-700 hover:ring-gray-700'>Add</button>
-                    </form>
-                    {loading && <Spinner/>}
-                </div> */}
-            </div>
+        <>
             <SideMenu/>
-        </div>
+            <div className="listsCont w-full overflow-auto flex relative">
+                <div className="flex gap-2">
+                    <Lists/>
+                    {/* <div className="addListForm h-max bg-gray-800 w-2/6 rounded-md text-white px-2 py-2">
+                        <form onSubmit={onSubmit} className='addList flex items-center gap-2 my-4'> 
+                            <input onChange={onChange} type='text' className='grow rounded-md px-2 py-2 bg-gray-700' placeholder='add new list' id='title' name='title'/>
+                            <button type='submit' className='ring-1 ring-white py-1 rounded-md px-2 hover:bg-gray-700 hover:ring-gray-700'>Add</button>
+                        </form>
+                        {loading && <Spinner/>}
+                    </div> */}
+                </div>
+            </div>
+        </>
     )
 };
 

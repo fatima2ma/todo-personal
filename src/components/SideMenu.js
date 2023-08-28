@@ -50,7 +50,7 @@ function SideMenu(){
         }
     }
     return(
-        <div className={`bg-gray-800 overflow-hidden rounded-md text-white h-full absolute ease-in-out duration-200 end-0 ${isClosed? 'w-1/5 p-2' : 'w-0 p-0'}`}>
+        <div className={`bg-gray-800 shadow-sm shadow-gray-600 overflow-hidden rounded-md text-white h-full z-50 absolute ease-in-out duration-200 end-0 ${isClosed? 'w-52 p-2' : 'w-0 p-0'}`}>
             <div className={`SideMenuHead p-2 flex justify-between items-center ease-in-out duration-200 ${isClosed? 'translate-x-0':'translate-x-full'}`}>
                 <h4 className="mt-12">Profile</h4>
                 <AiOutlineClose className="self-start cursor-pointer" onClick={handleSidebar}/>

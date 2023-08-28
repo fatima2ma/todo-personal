@@ -12,10 +12,10 @@ import { IsClosedSideProvider } from './context/IsClosedSide';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App bg-gray-600 w-full min-h-screen flex flex-col gap-0.5">
+      <div className="App overflow-hidden bg-gray-600 min-h-screen flex flex-col gap-0.5">
         <IsClosedSideProvider>
         <Header/>
-        <div className='main w-full h-full flex items-center justify-center'>
+        <div className='main grow flex justify-center relative'>
           <Routes>
             <Route path='/' element={<SignIn/>}/>
             <Route path='/home' element={<PrivateRoute/>}>
